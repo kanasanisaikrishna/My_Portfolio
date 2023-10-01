@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="path/to/fontawesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        Sai Krishna Kanasanai</div><br>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li><br>
+            <li><a href="#about">About</a></li><br>
+            <li><a href="#projects">Projects</a></li><br>
+            <li><a href="#contactus">Contact Me</a></li><br>
+            <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i><br>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i><br>
+      </nav>
+    </header>
+    <main>
+      <!-- -----------------------this section 1 for index ------------------>
+      <section class="firstsection" id="header">
+        <img src="bg.png" alt="" /><b>
+          <div class="description">
+            Hi, My Name is <span>sai</span>
+            <div>and I am a passionate</div>
+            <span id="element"></span><br></b>
+            <button class="bb1 bb btn btn-color-2 project btn"onclick="location.href='saikrishna_CV.pdf'" download>Download CV</button>
+          </div>
+      </section>
+      <hr />
+      <!-- -----------------------this section 2 for About Me ------------------>
+      <section class="secondsection" id="about">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="my_Pic.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              As a recent graduate from Krishna university with a Master of
+              Computer Applications in Computer Science, I am extremely
+              interested in the WEB Development opportunity posted on the
+              website. After reviewing the key qualifications for this role, I
+              am confident that I am well-prepared to be a valuable contributor
+              to company growth and success
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span><b>Programic languages</b></span
+                  ><br />Python with DSA,Django Framework
+                </li>
+                <li>
+                  <span><b>Web Technologies</b></span
+                  ><br />HTML 5,CSS 3,JavaScript
+                </li>
+                <li>
+                  <span><b>DataBases</b></span
+                  ><br />SQL,MySQL
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span><b>internship</b></span
+                  ><br />Python with DSA,Django Framework
+                </li>
+                <li>
+                  <span><b>Projects</b></span
+                  ><br />HTML 5,CSS 3,JavaScript
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span><b>MCA</b></span
+                  ><br />Python with DSA,Django Framework
+                </li>
+                <li>
+                  <span><b>BSc Computer Science</b></span
+                  ><br />HTML 5,CSS 3,JavaScript
+                </li>
+                <li>
+                  <span><b>Intermediate</b></span
+                  ><br />SQL,MySQL
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- --------------------Projects---------------------- -->
+      <section class="thirdsection" id="projects">
+        <h1 class="sub-title"><center>Projects</center></h1>
+        <div class="project-list">
+          <div class="colrow">
+            <div class="details color-container">
+              <div class="project">
+                <h1 class="project-title"><br />Signup & SignIn</h1>
+                <img src="pic1.jpg" alt="project1" />
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project btn"
+                    onclick='location.href="https://github.com/kanasanisaikrishna/login-and-registration.git"'
+                  >
+                    Git Hub
+                  </button>
+                  <!-- <button
+                    class="btn btn-color-2 project btn"
+                    onclick="window.href='kanasanisaikrishna.pythonanywhere.com'">
+                    Demo
+                  </button> -->
+                </div>
+              </div>
+            </div>
+            <div class="details color-container">
+              <div class="project">
+                <h1 class="project-title"><br />Todo Application</h1>
+                <img src="pic2.jpg" alt="project1" />
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project btn"
+                    onclick="location.href='https://github.com/kanasanisaikrishna/ToDo_app.git'"
+                  >
+                    Git Hub
+                  </button>
+                  <!-- <button
+                    class="btn btn-color-2 project btn"
+                    onclick="location.href='github.com'"
+                  >
+                    Demo
+                  </button> -->
+                </div>
+              </div>
+            </div>
+            <div class="details color-container">
+              <div class="project">
+                <h1 class="project-title"><br />Blog Application</h1>
+                <img src="pic3.jpg" alt="project1" />
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project btn"
+                    onclick="location.href='https://github.com/kanasanisaikrishna/ContentManagementTool.git'"
+                  >
+                    Git Hub
+                  </button>
+                  <!-- <button
+                    class="btn btn-color-2 project btn"
+                    onclick="location.href='github.com'"
+                  >
+                    Demo
+                  </button> -->
+                </div>
+              </div>
+            </div>
+            <div class="details color-container">
+              <div class="project">
+                <h1 class="project-title"><br />Video Confirence</h1>
+                <img src="pic4.jpg" alt="project1" />
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project btn"
+                    onclick="location.href='https://github.com/kanasanisaikrishna/Video_Confirence.git'"
+                  >
+                    Git Hub
+                  </button>
+                  <!-- <button
+                    class="btn btn-color-2 project btn"
+                    onclick="location.href='github.com'"
+                  >
+                    Demo
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- -----------------------Contact us section------------------------ -->
+      <section class="fourthsection" id="contactus">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>kanasanisaikrishna@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i>7799692457</p>
+              <div class="social-media">
+                <a href="https://www.linkedin.com/in/sai-krishna-kanasani-282171219/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/saikrish.kanasani/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/this.is.saikrishna?igshid=NzZlODBkYWE4Ng=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/kanasanisaikrishna"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form class="contact" name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  placeholder="Enter Your Name"
+                  name="name"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Enter Your Email"
+                  name="email"
+                  required
+                />
+                <textarea
+                  rows="6"
+                  placeholder="Enter Your Message"
+                  name="message"
+                ></textarea>
+                <button class="bb btn btn-color-2 project btn">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------------Copy Right Section------------------------------- -->
+      <div class="copyright">
+        <p>
+          <i class="fa-solid fa-copyright"></i>Copy Right @saikrishnakanasani
+        </p>
+      </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "UI Disigner", " and Video Editer"],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwrYzzLkXNV8EL0CX6xLtNag3UTb2ztmqlUr-LwoSkTTZ8ErYfpyJcpmLxJK1BuHE7K/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg= document.getElementById("msg")
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML='Your Message was sent Successfully.....'
+            setTimeout(function(){
+              msg.innerHTML=''
+            },5000)
+            form.reset()
+
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      var smenu= document.getElementById('sidemenu');
+      function openmenu(){
+        smenu.style.right ='0';
+
+      }
+      function closemenu(){
+        smenu.style.right ='-200px';
+
+      }
+
+    </script>
+  </body>
+</html>
