@@ -1,331 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="path/to/fontawesome.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="">Sai Krishna Kanasanai</a</div><br>
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li><br>
-            <li><a href="#about">About</a></li><br>
-            <li><a href="#projects">Projects</a></li><br>
-            <li><a href="#contactus">Contact Me</a></li><br>
-            <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i><br>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i><br>
-      </nav>
-    </header>
-    <main>
-      <!-- -----------------------this section 1 for index ------------------>
-      <section class="firstsection" id="header">
-        <img src="bg.png" alt="" /><b>
-          <div class="description">
-            Hi, My Name is <span>sai</span>
-            <div>and I am a passionate</div>
-            <span id="element"></span><br></b>
-            <button class="bb1 bb btn btn-color-2 project btn"onclick="location.href='https://1drv.ms/w/c/dda532ec1095514f/EV517qP3T3ZJlZiXJkJRNGIB9Dj7Im9maZyvLmk8mQiQXw?e=zAqFCg'" download>Download CV</button>
-          </div>
-      </section>
-      <hr />
-      <!-- -----------------------this section 2 for About Me ------------------>
-      <section class="secondsection" id="about">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="my_Pic.jpg" alt="" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-             I am seeking a challenging and dynamic work environment where
-              I can effectively apply my skills  and  knowledge  to  advance 
-              my career and contribute to the growth  and  success  of  the 
-              organization.
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links active-link" onclick="opentab('Certifications')">
-                Certifications
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span><b>Scripting</b></span
-                  ><br /> Python, Powershell, YAML, SQL
-                </li>
-                <li>
-                  <span><b>DataBases</b></span
-                  ><br />MYSQL, POSTGRESQL, Oracle
-                </li>
-                <li>
-                  <span><b>Tools & Technologies</b></span
-                  ><br /> GCP,AWS,Azure,Docker,Kubernates,Terraform,Django REST API
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span><b>Projects</b></span
-                  ><br />Algo Trading Plateform
-                  <br>Content management Tool
-                </li>
-                <li>
-                  <span><b>Currectly Working on</b></span
-                  ><br />Algo Trading Plateform
-                  <br>at NIMBUS INSIGHTS
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="Certifications">
-              <ul>
-                <li>
-                  <span><b>AZURE</b></span
-                  ><br /> Azure Fundamentals (AZ-900)
-                </li>
-                <li>
-                  <span><b>GCP</b></span
-                  ><br />Google Cloud Digital Leader
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span><b>MCA</b></span
-                  ><br />Krishna University ,Machilipatnum<br>
-                  (2021 - 2023) 
-                </li>
-                <li>
-                  <span><b>BSc Computer Science</b></span
-                  ><br /><br /><br />Krishna University ,Vijayawada<br>
-                  (2021 - 2023)
-                </li>
-                <li>
-                  <span><b>Intermediate</b></span
-                  ><br /><br />Andhra Loyola College ,Vijayawada<br>
-                  (2016 - 2018)
-                </li>
-              </ul>
-            </div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sai Krishna | Python, Cloud, and DevOps Portfolio" />
+  <meta name="keywords" content="Sai Krishna, Python Developer, Cloud Engineer, DevOps, Portfolio" />
+  <title>Sai Krishna | Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <div id="name">Sai Krishna Kanasanai</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+  <i class="fas fa-bars"></i>
+</div>
+    <ul>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contactus">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <section class="firstsection" id="header">
+    <img src="bg.png" alt="Profile Picture">
+    <div class="description">
+      Hi, My Name is <span>Sai Krishna</span><br>
+      and I am a passionate <br><span id="element"></span>
+      <br>
+      <button class="btn" onclick="location.href='https://1drv.ms/w/c/dda532ec1095514f/EV517qP3T3ZJlZiXJkJRNGIB9Dj7Im9maZyvLmk8mQiQXw?e=zAqFCg'">Download CV</button>
+    </div>
+  </section>
+
+  <section class="secondsection" id="about">
+    <h1 class="sub-title">About Me</h1>
+    <p>I am seeking a challenging and dynamic work environment where I can effectively apply my skills and knowledge to advance my career and contribute to the growth and success of the organization.</p>
+
+    <div>
+      <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+      <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+      <p class="tab-links" onclick="opentab('Certifications', event)">Certifications</p>
+      <p class="tab-links" onclick="opentab('education', event)">Education</p>
+    </div>
+
+    <div class="tab-contents active-tab" id="skills">
+      <ul>
+        <li><b>Scripting:</b> Python, PowerShell, YAML, SQL</li>
+        <li><b>Databases:</b> MySQL, PostgreSQL, Oracle</li>
+        <li><b>Tools & Technologies:</b> GCP, AWS, Azure, Docker, Kubernetes, Terraform, Django REST API</li>
+      </ul>
+    </div>
+    <div class="tab-contents" id="experience">
+      <ul>
+        <li><b>Projects:</b> Algo Trading Platform, Content Management Tool</li>
+        <li><b>Currently Working on:</b> Algo Trading Platform at NIMBUS INSIGHTS</li>
+      </ul>
+    </div>
+    <div class="tab-contents" id="Certifications">
+      <ul>
+        <li><b>Azure:</b> Azure Fundamentals (AZ-900)</li>
+        <li><b>GCP:</b> Google Cloud Digital Leader</li>
+      </ul>
+    </div>
+    <div class="tab-contents" id="education">
+      <ul>
+        <li><b>MCA:</b> Krishna University, Machilipatnam (2021 - 2023)</li>
+        <li><b>BSc Computer Science:</b> Andhra Loyola College, Vijayawada (2018 - 2021)</li>
+        <li><b>Intermediate:</b> Andhra Loyola College, Vijayawada (2016 - 2018)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="thirdsection" id="projects">
+    <h1 class="sub-title">Projects</h1>
+    <div class="project-list">
+      <div class="project">
+        <h3 class="project-title">Signup & SignIn</h3>
+        <img src="pic1.jpg" alt="Signup & SignIn">
+        <div class="btn-container">
+          <button class="btn" onclick="location.href='https://github.com/kanasanisaikrishna/login-and-registration.git'">GitHub</button>
         </div>
-      </section>
-      <hr />
-      <!-- --------------------Projects---------------------- -->
-      <section class="thirdsection" id="projects">
-        <h1 class="sub-title"><center>Projects</center></h1>
-        <div class="project-list">
-          <div class="colrow">
-            <div class="details color-container">
-              <div class="project">
-                <h1 class="project-title"><br />Signup & SignIn</h1>
-                <img src="pic1.jpg" alt="project1" />
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project btn"
-                    onclick='location.href="https://github.com/kanasanisaikrishna/login-and-registration.git"'
-                  >
-                    Git Hub
-                  </button>
-                  <!-- <button
-                    class="btn btn-color-2 project btn"
-                    onclick="window.href='kanasanisaikrishna.pythonanywhere.com'">
-                    Demo
-                  </button> -->
-                </div>
-              </div>
-            </div>
-            <div class="details color-container">
-              <div class="project">
-                <h1 class="project-title"><br />Todo Application</h1>
-                <img src="pic2.jpg" alt="project1" />
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project btn"
-                    onclick="location.href='https://github.com/kanasanisaikrishna/ToDo_app.git'"
-                  >
-                    Git Hub
-                  </button>
-                  <!-- <button
-                    class="btn btn-color-2 project btn"
-                    onclick="location.href='github.com'"
-                  >
-                    Demo
-                  </button> -->
-                </div>
-              </div>
-            </div>
-            <div class="details color-container">
-              <div class="project">
-                <h1 class="project-title"><br />Blog Application</h1>
-                <img src="pic3.jpg" alt="project1" />
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project btn"
-                    onclick="location.href='https://github.com/kanasanisaikrishna/ContentManagementTool.git'"
-                  >
-                    Git Hub
-                  </button>
-                  <!-- <button
-                    class="btn btn-color-2 project btn"
-                    onclick="location.href='github.com'"
-                  >
-                    Demo
-                  </button> -->
-                </div>
-              </div>
-            </div>
-            <div class="details color-container">
-              <div class="project">
-                <h1 class="project-title"><br />Video Confirence</h1>
-                <img src="pic4.jpg" alt="project1" />
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project btn"
-                    onclick="location.href='https://github.com/kanasanisaikrishna/Video_Confirence.git'"
-                  >
-                    Git Hub
-                  </button>
-                  <!-- <button
-                    class="btn btn-color-2 project btn"
-                    onclick="location.href='github.com'"
-                  >
-                    Demo
-                  </button> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr />
-      <!-- -----------------------Contact us section------------------------ -->
-      <section class="fourthsection" id="contactus">
-        <div class="container">
-          <div class="row">
-            <div class="contact-left">
-              <h1 class="sub-title">Contact Me</h1>
-              <p><i class="fa-solid fa-paper-plane"></i>kanasanisaikrishna@gmail.com</p>
-              <p><i class="fa-solid fa-phone"></i>7799692457</p>
-              <div class="social-media">
-                <a href="https://www.linkedin.com/in/sai-krishna-kanasani-282171219/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/saikrish.kanasani/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://instagram.com/this.is.saikrishna?igshid=NzZlODBkYWE4Ng=="><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/kanasanisaikrishna"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-            <div class="contact-right">
-              <form class="contact" name="submit-to-google-sheet">
-                <input
-                  type="text"
-                  placeholder="Enter Your Name"
-                  name="name"
-                  required
-                />
-                <input
-                  type="text"
-                  placeholder="Enter Your Email"
-                  name="email"
-                  required
-                />
-                <textarea
-                  rows="6"
-                  placeholder="Enter Your Message"
-                  name="message"
-                ></textarea>
-                <button class="bb btn btn-color-2 project btn">Submit</button>
-              </form>
-              <span id="msg"></span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ----------------------Copy Right Section------------------------------- -->
-      <div class="copyright">
-        <p>
-          <i class="fa-solid fa-copyright"></i>Copy Right @saikrishnakanasani
-        </p>
       </div>
-    </main>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["Python Developer", "Devops Engineer", " and Cloud Engineer"],
-        typeSpeed: 50,
-      });
-    </script>
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
+      <div class="project">
+        <h3 class="project-title">Todo Application</h3>
+        <img src="pic2.jpg" alt="Todo App">
+        <div class="btn-container">
+          <button class="btn" onclick="location.href='https://github.com/kanasanisaikrishna/ToDo_app.git'">GitHub</button>
+        </div>
+      </div>
+      <div class="project">
+        <h3 class="project-title">Blog Application</h3>
+        <img src="pic3.jpg" alt="Blog App">
+        <div class="btn-container">
+          <button class="btn" onclick="location.href='https://github.com/kanasanisaikrishna/ContentManagementTool.git'">GitHub</button>
+        </div>
+      </div>
+      <div class="project">
+        <h3 class="project-title">Video Conference</h3>
+        <img src="pic4.jpg" alt="Video Conference">
+        <div class="btn-container">
+          <button class="btn" onclick="location.href='https://github.com/kanasanisaikrishna/Video_Confirence.git'">GitHub</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbwrYzzLkXNV8EL0CX6xLtNag3UTb2ztmqlUr-LwoSkTTZ8ErYfpyJcpmLxJK1BuHE7K/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg= document.getElementById("msg")
+  <section class="fourthsection" id="contactus">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fa-solid fa-paper-plane"></i> kanasanisaikrishna@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> 7799692457</p>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/sai-krishna-kanasani-282171219/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/saikrish.kanasani/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com/this.is.saikrishna"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/kanasanisaikrishna"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <form name="submit-to-google-sheet">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+        <button class="btn" type="submit">Submit</button>
+        <span id="msg"></span>
+      </form>
+    </div>
+  </section>
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML='Your Message was sent Successfully.....'
-            setTimeout(function(){
-              msg.innerHTML=''
-            },5000)
-            form.reset()
+  <div class="copyright">
+    <p>&copy; 2025 Sai Krishna Kanasanai. All Rights Reserved.</p>
+  </div>
 
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-    <script>
-      var smenu= document.getElementById('sidemenu');
-      function openmenu(){
-        smenu.style.right ='0';
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Python Developer", "DevOps Engineer", "Cloud Engineer"],
+      typeSpeed: 50,
+      loop: true
+    });
+  </script>
+  <script>
+    function opentab(tabname, event) {
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+      for (let i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active-link");
+      for (let i = 0; i < tabcontents.length; i++) tabcontents[i].classList.remove("active-tab");
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch("https://script.google.com/macros/s/AKfycbwrYzzLkXNV8EL0CX6xLtNag3UTb2ztmqlUr-LwoSkTTZ8ErYfpyJcpmLxJK1BuHE7K/exec", {
+        method: "POST",
+        body: new FormData(form),
+      })
+        .then((response) => {
+          msg.innerHTML = "Message sent successfully!";
+          setTimeout(() => (msg.innerHTML = ""), 5000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+  <script>
+  function toggleMenu() {
+    document.querySelector("nav ul").classList.toggle("active");
+  }
+</script>
+</body>
 
-      }
-      function closemenu(){
-        smenu.style.right ='-200px';
-
-      }
-
-    </script>
-  </body>
 </html>
